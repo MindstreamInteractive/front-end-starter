@@ -12,16 +12,16 @@ html(lang="en")
         //- link(rel='dns-prefetch', href='//example.com')
 
         if !production
-            link(rel='stylesheet', href='main.css')
+            link(rel='stylesheet', href='assets/css/main.css')
         else
-            link(rel='stylesheet', href='main.min.css')
+            link(rel='stylesheet', href='assets/css/main.min.css')
 
     body
         block body
 
         if !production
-            script(src='main.js')
+            script(src='assets/js/main.js')
         else
-            script(src='main.min.js')
+            script(src='assets/js/main.min.js')
         
         block scripts
