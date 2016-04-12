@@ -29,5 +29,5 @@ $.gulp.task('styles', function() {
         .pipe(postcss(postpros))
         .pipe($.should(config.prod, $.rename({ suffix: '.min' })))
         .pipe($.should(!config.prod, sourcemaps.write()))
-        .pipe($.gulp.dest(config.dest));
+        .pipe($.gulp.dest(config.dest + 'assets/css'));
 });
