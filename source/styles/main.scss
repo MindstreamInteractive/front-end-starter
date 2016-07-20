@@ -16,17 +16,17 @@
 @import 'global/base';
 
 // This needs to come after reset
-@import 'utils/mixins/spacing';
+// @import 'utils/mixins/spacing'; // ! Need to set $space in _vars.scss
 
-// @import 'components/atoms/';
+// @import 'components/basics/';
+
+// @import 'components/fragments/';
 
 // @import 'components/modules/';
 
-// @import 'components/sections/';
-
 // @import 'components/templates/';
 
-// @import 'components/views/';
+// @import 'components/pages/';
 
 @import 'global/trumps';
 @import 'global/shame';
