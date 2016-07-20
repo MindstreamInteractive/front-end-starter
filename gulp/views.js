@@ -30,7 +30,7 @@ var config = require('./config.js');
 //HTML includes
 var fileinclude = require('gulp-file-include');
 
-$.gulp.task('fileinclude', function() {
+$.gulp.task('views', function() {
     $.gulp.src([config.src + 'views/*.html'])
     .pipe(fileinclude({
         prefix: '@@',

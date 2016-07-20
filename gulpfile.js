@@ -8,7 +8,7 @@ gulp.task('clean', require('del').bind(null, [config.dest + '**/*', '!.*']));
 
 gulp.task('default', ['clean'], function() {
     // gulp.start('styles', 'images', 'scripts', 'views'); // Jade
-    gulp.start('styles', 'images', 'scripts', 'fileinclude'); // HTML
+    gulp.start('styles', 'images', 'scripts', 'views'); // HTML
 });
 
 gulp.task('prod', function() {
