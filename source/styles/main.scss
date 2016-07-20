@@ -2,16 +2,21 @@
 
 @import 'vars';
 
+@import 'utils/functions/em';
 @import 'utils/functions/map-getters';
 @import 'utils/functions/valid-value';
 
 @import 'utils/mixins/attention';
+@import 'utils/mixins/centerer';
 @import 'utils/mixins/clearfix';
 @import 'utils/mixins/hide-text';
 @import 'utils/mixins/reset';
 
 @import 'global/normalize'; // not in vendor because it's altered
 @import 'global/base';
+
+// This needs to come after reset
+@import 'utils/mixins/spacing';
 
 // @import 'components/atoms/';
 
