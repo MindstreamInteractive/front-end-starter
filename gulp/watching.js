@@ -22,7 +22,7 @@ $.gulp.task('watching', function() {
     });
 
     //$.gulp.watch(config.src + 'views/**/*.jade', ['views', browserSync.reload]);
-    $.gulp.watch(config.src + 'views/**/*.html', ['fileinclude', browserSync.reload]);
+    $.gulp.watch(config.src + 'views/**/*.html', ['views', browserSync.reload]);
     $.gulp.watch(config.src + 'styles/**/*.scss', ['styles']);
     $.gulp.watch(config.src + 'images/**/*.{png,jpg,jpeg,gif,svg}', ['images']);
     $.gulp.watch(config.src + 'scripts/**/*.js', ['lint-scripts']);
