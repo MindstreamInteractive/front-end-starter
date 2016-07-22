@@ -24,7 +24,7 @@ $.gulp.task('scripts', ['lint-scripts'], function() {
             .pipe(source('main.js'))
             .pipe($.should(config.prod, streamify(uglify())))
             .pipe($.should(config.prod, $.rename({suffix: '.min'})))
-            .pipe($.gulp.dest(config.dest + 'assets/js'));
+            .pipe($.gulp.dest(config.contentDir + 'js'));
     }
 
     var b = browserify({
