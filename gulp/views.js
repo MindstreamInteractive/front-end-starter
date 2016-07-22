@@ -35,6 +35,6 @@ $.gulp.task('views', function() {
     .pipe(fileinclude({
         prefix: '@@',
         basepath: '@file'
-    }))
+    }).on('error', $.notify.onError('<%= error.message %>')))
     .pipe($.gulp.dest(config.dest));
 });
