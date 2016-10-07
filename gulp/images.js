@@ -1,7 +1,8 @@
 var $ = require('./common.js');
 var config = require('./config.js');
 
-var imagemin = require('gulp-imagemin');
+var imagemin = require('gulp-imagemin'),
+    webp = require('imagemin-webp');
 
 $.gulp.task('images', function() {
     return $.gulp.src(config.src + 'images/**/*.{png,jpg,jpeg,gif,svg}')
